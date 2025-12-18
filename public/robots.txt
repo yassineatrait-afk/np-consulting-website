@@ -1,0 +1,12 @@
+# Robots.txt for NP Consulting Website
+# Update the domain below before deploying
+
+User-agent: *
+Allow: /
+
+# Disallow server-side files
+Disallow: /server/
+Disallow: /content/
+
+# Sitemap location (update domain)
+Sitemap: https://yourdomain.com/sitemap.xml

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Editor - NP Consulting Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d9488;
+            --primary-light: #ccfbf1;
+            --text: #0f172a;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+            --bg: #f8fafc;
+            --white: #ffffff;
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .card h2 {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .hint {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            font-size: 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-family: inherit;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0f766e;
+        }
+
+        .btn-secondary {
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .alert-info {
+            background: var(--primary-light);
+            color: #115e59;
+        }
+
+        .alert-success {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        #status {
+            display: none;
+        }
+
+        #status.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Website Content Editor</h1>
+        <p class="subtitle">Edit your website content using this simple form. No coding required!</p>
+
+        <div class="alert alert-info">
+            <strong>How to use:</strong> Fill in the fields below, then click "Download Updated Content".
+            Upload the downloaded file to your website's <code>/content/</code> folder to replace the existing
+            <code>content.json</code>.
+        </div>
+
+        <div id="status" class="alert alert-success"></div>
+
+        <form id="editor-form">
+
+            <!-- Business Information -->
+            <div class="card">
+                <h2>Business Information</h2>
+
+                <div class="form-group">
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" data-path="business.name" placeholder="Your Business Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="np-name">NP Name</label>
+                    <input type="text" id="np-name" data-path="business.npName" placeholder="Jane Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="credentials">Credentials</label>
+                    <p class="hint">e.g., MSN, APRN, FNP-BC</p>
+                    <input type="text" id="credentials" data-path="business.credentials"
+                        placeholder="MSN, APRN, FNP-BC">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" data-path="business.email" placeholder="contact@yourdomain.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" data-path="business.phone" placeholder="(555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="states">States Served</label>
+                    <input type="text" id="states" data-path="business.statesServed"
+                        placeholder="New York, New Jersey, Connecticut">
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="card">
+                <h2>Homepage Hero Section</h2>
+
+                <div class="form-group">
+                    <label for="hero-headline">Main Headline</label>
+                    <input type="text" id="hero-headline" data-path="hero.headline"
+                        placeholder="Virtual Tele-Home Care Consulting...">
+                </div>
+
+                <div class="form-group">
+                    <label for="hero-subheadline">Subheadline</label>
+                    <textarea id="hero-subheadline" data-path="hero.subheadline"
+                        placeholder="Nurse Practitioner-led clinical consulting..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cta-primary">Primary Button Text</label>
+                    <input type="text" id="cta-primary" data-path="hero.ctaPrimary"
+                        placeholder="Request a Consultation">
+                </div>
+
+                <div class="form-group">
+                    <label for="cta-secondary">Secondary Button Text</label>
+                    <input type="text" id="cta-secondary" data-path="hero.ctaSecondary" placeholder="View Services">
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="card">
+                <h2>About Section</h2>
+
+                <div class="form-group">
+                    <label for="about-intro">About Introduction</label>
+                    <textarea id="about-intro" data-path="about.intro"
+                        placeholder="Founded by a Nurse Practitioner with extensive experience..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="about-mission">Mission Statement</label>
+                    <textarea id="about-mission" data-path="about.mission"
+                        placeholder="Our mission is to provide practical..."></textarea>
+                </div>
+            </div>
+
+            <!-- CTA Band -->
+            <div class="card">
+                <h2>Call to Action Band</h2>
+
+                <div class="form-group">
+                    <label for="cta-title">CTA Title</label>
+                    <input type="text" id="cta-title" data-path="ctaBand.title"
+                        placeholder="Ready to Improve Your Agency's Clinical Operations?">
+                </div>
+
+                <div class="form-group">
+                    <label for="cta-text">CTA Text</label>
+                    <input type="text" id="cta-text" data-path="ctaBand.text"
+                        placeholder="Let's discuss how we can support your team.">
+                </div>
+
+                <div class="form-group">
+                    <label for="cta-button">Button Text</label>
+                    <input type="text" id="cta-button" data-path="ctaBand.buttonText"
+                        placeholder="Request a Consultation">
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="button" id="load-btn" class="btn btn-secondary">Load Current Content</button>
+                <button type="button" id="download-btn" class="btn btn-primary">Download Updated Content</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        let contentData = null;
+
+        // Load current content
+        document.getElementById('load-btn').addEventListener('click', async function () {
+            try {
+                const response = await fetch('content/content.json');
+                contentData = await response.json();
+
+                // Populate form fields
+                document.querySelectorAll('[data-path]').forEach(field => {
+                    const path = field.dataset.path;
+                    const value = getNestedValue(contentData, path);
+                    if (value) {
+                        field.value = value;
+                    }
+                });
+
+                showStatus('Content loaded successfully!');
+            } catch (error) {
+                alert('Error loading content. Make sure content.json exists.');
+            }
+        });
+
+        // Download updated content
+        document.getElementById('download-btn').addEventListener('click', function () {
+            if (!contentData) {
+                // Load the default structure
+                fetch('content/content.json')
+                    .then(r => r.json())
+                    .then(data => {
+                        contentData = data;
+                        updateAndDownload();
+                    })
+                    .catch(() => {
+                        alert('Please load current content first.');
+                    });
+            } else {
+                updateAndDownload();
+            }
+        });
+
+        function updateAndDownload() {
+            // Update content with form values
+            document.querySelectorAll('[data-path]').forEach(field => {
+                const path = field.dataset.path;
+                if (field.value) {
+                    setNestedValue(contentData, path, field.value);
+                }
+            });
+
+            // Create and download file
+            const blob = new Blob([JSON.stringify(contentData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'content.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showStatus('Content downloaded! Upload it to your website to apply changes.');
+        }
+
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((o, k) => o && o[k], obj);
+        }
+
+        function setNestedValue(obj, path, value) {
+            const keys = path.split('.');
+            const last = keys.pop();
+            const target = keys.reduce((o, k) => o[k] = o[k] || {}, obj);
+            target[last] = value;
+        }
+
+        function showStatus(message) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.classList.add('show');
+            setTimeout(() => status.classList.remove('show'), 5000);
+        }
+    </script>
+</body>
+
+</html>

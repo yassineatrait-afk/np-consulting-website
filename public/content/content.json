@@ -1,0 +1,328 @@
+{
+  "_instructions": "EDITING GUIDE: Change any text in quotes below. Save this file. Refresh your website to see changes.",
+  "_note": "DO NOT change the field names (like 'name' or 'headline'). Only change the text values.",
+  "business": {
+    "name": "Clarity Home Care Consulting",
+    "tagline": "Virtual Tele-Home Care Consulting",
+    "npName": "Sarah Mitchell",
+    "credentials": "MSN, APRN, FNP-BC",
+    "email": "hello@clarityhomecareconsulting.com",
+    "phone": "(917) 555-0142",
+    "statesServed": "New York, New Jersey, Connecticut",
+    "licenseInfo": "NPI: 1234567890 | NY License: NP-029384"
+  },
+  "hero": {
+    "headline": "Virtual Tele-Home Care Consulting for Agencies & MLTC Partners",
+    "subheadline": "Nurse Practitioner-led clinical consulting to help your agency optimize care coordination, improve documentation quality, and strengthen clinical workflows—without adding to your staff.",
+    "ctaPrimary": "Request a Consultation",
+    "ctaSecondary": "View Services",
+    "trustText": "B2B consulting only. No patient data collected on this site."
+  },
+  "whoWeHelp": {
+    "title": "Who We Partner With",
+    "subtitle": "We work exclusively with organizations committed to improving home-based care delivery.",
+    "audiences": [
+      {
+        "icon": "building",
+        "title": "Home Care Agencies",
+        "description": "Licensed home care agencies seeking clinical workflow optimization and quality improvement"
+      },
+      {
+        "icon": "shield",
+        "title": "MLTCs & Managed Care Plans",
+        "description": "Managed long-term care organizations focused on care coordination and regulatory compliance"
+      },
+      {
+        "icon": "users",
+        "title": "Care Management Teams",
+        "description": "Interdisciplinary teams looking to enhance communication and care handoff processes"
+      }
+    ]
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "Practical, outcomes-focused consulting designed for home care operations.",
+    "items": [
+      {
+        "icon": "clipboard-check",
+        "title": "Clinical Workflow Optimization",
+        "description": "Streamline clinical processes, reduce documentation burden, and improve care team efficiency through evidence-based workflow redesign."
+      },
+      {
+        "icon": "file-text",
+        "title": "Documentation & Quality Improvement",
+        "description": "Enhance clinical documentation practices to support regulatory compliance, improve audit outcomes, and strengthen quality metrics."
+      },
+      {
+        "icon": "book-open",
+        "title": "Staff Training & Protocol Development",
+        "description": "Develop comprehensive training programs and clinical protocols tailored to your agency's specific patient population and care model."
+      },
+      {
+        "icon": "refresh",
+        "title": "Care Coordination Enhancement",
+        "description": "Improve communication pathways and care handoffs across your interdisciplinary team to reduce gaps in care."
+      },
+      {
+        "icon": "arrow-right-circle",
+        "title": "Transition-of-Care Support",
+        "description": "Strengthen discharge planning processes and reduce hospital readmissions through improved care transition protocols."
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Performance Analytics & Reporting",
+        "description": "Data-driven insights to track progress, identify improvement opportunities, and demonstrate value to stakeholders."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How Engagements Work",
+    "subtitle": "A clear, structured approach to every partnership.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Discovery",
+        "description": "We start with a consultation to understand your challenges, goals, and current workflows. No obligation, just a conversation."
+      },
+      {
+        "number": "2",
+        "title": "Customized Plan",
+        "description": "You receive a tailored proposal outlining scope, timeline, deliverables, and expected outcomes specific to your agency."
+      },
+      {
+        "number": "3",
+        "title": "Ongoing Support",
+        "description": "We work alongside your team to implement changes, provide training, and measure progress toward your goals."
+      }
+    ]
+  },
+  "credibility": {
+    "title": "Why Work With Us",
+    "subtitle": "Clinical expertise combined with a practical, agency-focused approach.",
+    "items": [
+      {
+        "icon": "award",
+        "title": "Nurse Practitioner-Led",
+        "description": "Over 12 years of experience in home health, care coordination, and clinical leadership across the tri-state area."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Compliance-Focused Approach",
+        "description": "All recommendations consider DOH regulations, CMS requirements, and industry best practices for home care."
+      },
+      {
+        "icon": "message-circle",
+        "title": "Clear Communication",
+        "description": "Regular progress updates, transparent reporting, and responsive support throughout every engagement."
+      }
+    ]
+  },
+  "partnerExpectations": {
+    "title": "What Partners Can Expect",
+    "subtitle": "Our commitment to every engagement.",
+    "items": [
+      "Professional, timely communication within 24 hours",
+      "Clear scope and deliverables documented upfront",
+      "Practical recommendations—not theoretical frameworks",
+      "Respect for your agency's unique culture and constraints",
+      "Complete confidentiality and discretion"
+    ]
+  },
+  "packages": {
+    "title": "Engagement Options",
+    "subtitle": "Flexible consulting packages designed to meet agencies where they are.",
+    "items": [
+      {
+        "name": "Advisory",
+        "description": "Perfect for agencies seeking expert guidance on specific clinical or operational challenges.",
+        "whoFor": "Agencies needing targeted advice on a specific issue without a long-term commitment",
+        "includes": [
+          "Initial 60-minute consultation and needs assessment",
+          "Customized recommendations report with action items",
+          "One 30-minute follow-up session to address questions",
+          "Email support for 30 days"
+        ],
+        "timeline": "2-4 weeks",
+        "featured": false
+      },
+      {
+        "name": "Implementation",
+        "description": "Hands-on support to implement new processes, improve existing workflows, or prepare for regulatory audits.",
+        "whoFor": "Agencies ready to make meaningful operational changes with expert guidance and support",
+        "includes": [
+          "Comprehensive workflow and documentation assessment",
+          "Detailed implementation roadmap with milestones",
+          "Up to 4 staff training sessions (virtual)",
+          "Process documentation and quick-reference guides",
+          "60 days of implementation support and check-ins"
+        ],
+        "timeline": "6-12 weeks",
+        "featured": true
+      },
+      {
+        "name": "Ongoing Partnership",
+        "description": "Continuous consulting relationship for agencies committed to sustained quality improvement.",
+        "whoFor": "Agencies seeking a long-term clinical consulting partner for ongoing optimization",
+        "includes": [
+          "Monthly 90-minute consulting sessions",
+          "Quarterly performance reviews with trend analysis",
+          "Priority email and phone support",
+          "Training updates and materials as needed",
+          "Customized KPI tracking and reporting"
+        ],
+        "timeline": "Monthly retainer",
+        "featured": false
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is this a patient-facing service?",
+        "answer": "No. Clarity Home Care Consulting works exclusively with agencies and organizations (B2B). We do not provide direct patient care, communicate with patients, or access patient records."
+      },
+      {
+        "question": "Do you collect or handle patient health information?",
+        "answer": "No. We do not collect, store, or handle any protected health information (PHI) through this website or in our consulting work. Our recommendations are based on process observations and aggregate data only."
+      },
+      {
+        "question": "Is this an EMR, patient portal, or software product?",
+        "answer": "No. This is a professional consulting service. We help agencies improve their clinical operations but do not offer electronic medical records, patient portals, or clinical software."
+      },
+      {
+        "question": "How do engagements typically begin?",
+        "answer": "Engagements begin with a complimentary 30-minute discovery call to discuss your agency's needs and challenges. From there, we provide a customized proposal with clear scope and pricing."
+      },
+      {
+        "question": "What geographic areas do you serve?",
+        "answer": "We provide virtual consulting services primarily to agencies in New York, New Jersey, and Connecticut. Contact us to discuss your specific location and needs."
+      },
+      {
+        "question": "What types of agencies do you work with?",
+        "answer": "We work with licensed home care agencies (LHCSAs), certified home health agencies (CHHAs), managed long-term care organizations (MLTCs), and care management companies of various sizes."
+      }
+    ]
+  },
+  "about": {
+    "headline": "About Clarity Home Care Consulting",
+    "intro": "Founded by Sarah Mitchell, MSN, APRN, FNP-BC, Clarity Home Care Consulting was created to help home care agencies deliver better outcomes through improved clinical operations. With over 12 years of experience in home health, hospital-to-home transitions, and care coordination, Sarah understands the unique challenges agencies face.",
+    "mission": "Our mission is to provide practical, clinically-grounded consulting that makes a real difference for home care agencies and the communities they serve. We believe every agency can improve outcomes with the right guidance and support.",
+    "philosophy": {
+      "title": "Our Approach",
+      "text": "We believe in working alongside agencies—not imposing external solutions. Every recommendation is tailored to your team, your patients, and your operational realities. We're not here to judge; we're here to help you succeed."
+    },
+    "credentials": {
+      "title": "Credentials & Background",
+      "items": [
+        "Master of Science in Nursing (MSN), Family Nurse Practitioner",
+        "Board Certified Family Nurse Practitioner (FNP-BC)",
+        "12+ years of home health and care coordination experience",
+        "Former Director of Clinical Operations at a tri-state home care agency",
+        "Member, Home Care Association of New York State (HCA)"
+      ]
+    }
+  },
+  "ctaBand": {
+    "title": "Ready to Improve Your Agency's Clinical Operations?",
+    "text": "Let's discuss how Clarity can support your team. No obligation, just a conversation.",
+    "buttonText": "Request a Consultation"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to learn how we can help your agency? Fill out the form below and we'll be in touch within one business day.",
+    "formLabels": {
+      "name": "Full Name",
+      "organization": "Organization",
+      "role": "Your Role/Title",
+      "email": "Email Address",
+      "phone": "Phone (Optional)",
+      "message": "How Can We Help?",
+      "consent": "I understand this is a B2B consulting service. I will not submit any patient information or protected health data.",
+      "submit": "Send Message"
+    },
+    "successMessage": "Thank you! Your message has been sent. We'll be in touch within one business day.",
+    "errorMessage": "Something went wrong. Please try again or email us directly at hello@clarityhomecareconsulting.com."
+  },
+  "footer": {
+    "description": "Nurse Practitioner-led virtual consulting for home care agencies and managed care organizations in the New York tri-state area.",
+    "navigation": {
+      "title": "Quick Links",
+      "links": [
+        {
+          "label": "Home",
+          "url": "index.html"
+        },
+        {
+          "label": "Services",
+          "url": "services.html"
+        },
+        {
+          "label": "About",
+          "url": "about.html"
+        },
+        {
+          "label": "Contact",
+          "url": "contact.html"
+        },
+        {
+          "label": "Privacy",
+          "url": "privacy.html"
+        }
+      ]
+    },
+    "disclaimer": "IMPORTANT NOTICE: This website is for business-to-business consulting services only. Clarity Home Care Consulting does not provide direct patient care. This is not a patient portal, medical service, or emergency resource. If you are experiencing a medical emergency, please call 911. Do not submit any patient health information (PHI) through this website.",
+    "copyright": "© 2024 Clarity Home Care Consulting. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "sections": [
+      {
+        "heading": "Information We Collect",
+        "content": "We collect only the information you voluntarily provide through our contact form: your name, organization, role, email address, phone number (if provided), and message content. This information is used solely to respond to your inquiry."
+      },
+      {
+        "heading": "No Patient Health Information",
+        "content": "This website does not collect, store, or process any Protected Health Information (PHI). Our consulting services do not require access to patient records. Do not submit any patient data through this site."
+      },
+      {
+        "heading": "How We Use Your Information",
+        "content": "Contact form submissions are sent directly to our business email. We use this information solely to respond to your inquiry and discuss potential consulting services. We do not sell or share your information with third parties."
+      },
+      {
+        "heading": "Data Retention",
+        "content": "Contact form submissions are retained in our secure email system for business communication purposes. We do not store submissions in a database on this website."
+      },
+      {
+        "heading": "Website Analytics",
+        "content": "This website may use basic analytics to understand site traffic and improve user experience. No personally identifiable information is collected through analytics."
+      },
+      {
+        "heading": "Contact Us",
+        "content": "If you have questions about this privacy policy, please contact us at hello@clarityhomecareconsulting.com."
+      }
+    ]
+  },
+  "meta": {
+    "home": {
+      "title": "Clarity Home Care Consulting | Virtual Tele-Home Care Consulting for Agencies",
+      "description": "Nurse Practitioner-led consulting for home care agencies and MLTCs in NY, NJ, CT. Improve clinical workflows, documentation, and care coordination. B2B only."
+    },
+    "services": {
+      "title": "Our Services | Clarity Home Care Consulting",
+      "description": "Clinical workflow optimization, documentation improvement, staff training, and care coordination consulting for home care agencies and managed care organizations."
+    },
+    "about": {
+      "title": "About | Clarity Home Care Consulting",
+      "description": "Meet Sarah Mitchell, MSN, APRN, FNP-BC. 12+ years of home health experience helping agencies improve clinical operations and patient outcomes."
+    },
+    "contact": {
+      "title": "Contact Us | Clarity Home Care Consulting",
+      "description": "Request a consultation to discuss how Clarity Home Care Consulting can help your agency improve clinical operations. B2B inquiries only."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Clarity Home Care Consulting",
+      "description": "Privacy policy for Clarity Home Care Consulting. Learn how we handle contact form submissions. No patient information collected."
+    }
+  }
+}
