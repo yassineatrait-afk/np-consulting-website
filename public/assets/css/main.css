@@ -25,7 +25,7 @@
 
 .header {
     position: fixed;
-    top: 15px;
+    top: 0;
     left: 0;
     right: 0;
     height: var(--header-height);
